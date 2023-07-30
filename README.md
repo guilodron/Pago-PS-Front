@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Frontend Development Task 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+Your task is to create a simple CRUD application using React with TypeScript.
 
-In the project directory, you can run:
+## General Requirements
 
-### `npm start`
+- The application must be written in TypeScript.
+- The application should be able to perform all CRUD operations (Create, Read, Update, Delete).
+- The styling is not a core requirement, but a well-styled app will win extra points.
+- Create a single-page application (SPA).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Detailed Requirements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Directory Structure
 
-### `npm test`
+Maintain a clean and organized directory structure. Here is a suggestion:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+├── components/
+│ ├── FormComponent.tsx
+│ ├── ListComponent.tsx
+├── services/
+│ └── api.ts
+├── App.tsx
+└── index.tsx
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create the necessary components to perform the CRUD operations. You don't need one component per operation, but the frontend must be capable of executing all CRUD operations.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Connect to Backend
 
-### `npm run eject`
+The application should interact with the backend:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- In the **api.ts** file (inside the services folder), define the functions for calling your backend API endpoints.
+- Use these functions in your components to perform the CRUD operations.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Routing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Use a routing library such as `react-router-dom` to navigate between different components/pages.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+bash
+npm install react-router-dom
+npm install @types/react-router-dom
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Error Handling
+Ensure your application can handle potential errors. Display meaningful error messages to the user.
+
+### Submission
+Push your code to a Git repository and submit the link.
+
+### Evaluation Criteria
+- Code organization and clarity.
+- Use of TypeScript and best practices.
+- Ability to perform CRUD operations and connect to the backend.
+- Error handling.
+- Extra points for good styling.
+
+Remember, the goal of this task is to evaluate your knowledge and skills in TypeScript, React, code organization, and connecting to APIs. Good luck!
